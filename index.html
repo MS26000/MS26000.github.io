@@ -13,36 +13,36 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 :root[data-theme="dark"]{--bg:#0c1224;--panel:#141c36;--ink:#e9edfa;--mute:#9aa5c7;--line:#26314f;--acc:#8c9bff;--acc2:#4fd1bd;--on:#0c1224;color-scheme:dark}
 html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Instrument Sans",system-ui,sans-serif;transition:background .4s,color .4s}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Instrument Sans",system-ui,sans-serif;transition:background .4s,color .4s}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
 h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.1;margin:0}
 a{color:var(--acc)}
 #bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:var(--acc);z-index:40}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:4px;align-items:center;padding:12px 32px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow-x:auto}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:4px;align-items:center;padding:10px 20px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow-x:auto}
 nav b{font:800 17px "Bricolage Grotesque",sans-serif;margin-right:auto;white-space:nowrap}
-nav a{color:var(--mute);text-decoration:none;padding:6px 11px;border-radius:99px;font-size:15px;white-space:nowrap;transition:.25s}
+nav a{color:var(--mute);text-decoration:none;padding:6px 11px;border-radius:99px;font-size:14px;white-space:nowrap;transition:.25s}
 nav a:hover,nav a.on{background:var(--acc);color:var(--on)}
 button{font:inherit;cursor:pointer}
 #theme{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:5px 12px;font-size:14px}
 :focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
 .ic{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:.5em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 h3 .ic{color:var(--acc)}.btn .ic{margin-right:.45em}
-section{max-width:1240px;margin:0 auto;padding:96px 32px 8px}
-h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:26px}
-.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;min-height:calc(100vh - 64px);padding-top:40px}
+section{max-width:1040px;margin:0 auto;padding:84px 22px 8px}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:26px}
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center;min-height:calc(100vh - 64px);padding-top:40px}
 .hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.03em}
 .hero>div>*{animation:rise .8s both}.hero>div>*:nth-child(2){animation-delay:.12s}.hero>div>*:nth-child(3){animation-delay:.24s}.hero>div>*:nth-child(4){animation-delay:.36s}
 @keyframes rise{from{opacity:0;transform:translateY(22px)}}
 .role{font:600 clamp(20px,3vw,30px) "Bricolage Grotesque",sans-serif;margin:14px 0;height:1.4em;overflow:hidden}
 .role span{display:inline-block;color:var(--acc);transition:transform .45s,opacity .45s}
 .role span.out{transform:translateY(-100%);opacity:0}
-.lead{color:var(--mute);max-width:62ch;font-size:1.08em}
+.lead{color:var(--mute);max-width:60ch}
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.btn{display:inline-block;padding:12px 22px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;font-weight:500;transition:transform .2s,background .2s}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;font-weight:500;transition:transform .2s,background .2s}
 .btn:hover{transform:translateY(-3px)}.btn.p{background:var(--acc);color:var(--on);border-color:var(--acc)}
 .side{text-align:center}
-.av{position:relative;width:min(340px,70vw);aspect-ratio:1;margin:0 auto 18px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 8px var(--panel),0 0 0 9px var(--line)}
-.av b{font:800 96px "Bricolage Grotesque",sans-serif;color:var(--on)}
+.av{position:relative;width:min(260px,70vw);aspect-ratio:1;margin:0 auto 18px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 8px var(--panel),0 0 0 9px var(--line)}
+.av b{font:800 72px "Bricolage Grotesque",sans-serif;color:var(--on)}
 .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .av:hover{animation:wob 1.2s}@keyframes wob{30%{transform:rotate(-3deg) scale(1.03)}70%{transform:rotate(3deg)}}
 #up{border:0;background:none;color:var(--mute);font-size:13px;text-decoration:underline}
@@ -60,17 +60,17 @@ h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:26px}
 ul{margin:8px 0 0;padding-left:20px}li{margin-bottom:5px}
 .slider{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .track{display:flex;transition:transform .7s cubic-bezier(.65,0,.25,1)}
-.slide{min-width:100%;padding:40px clamp(22px,5vw,60px)}
-.slide h3{font-size:clamp(26px,3.6vw,38px);margin-bottom:6px}
+.slide{min-width:100%;padding:34px clamp(20px,5vw,48px)}
+.slide h3{font-size:clamp(24px,3.4vw,34px);margin-bottom:6px}
 .ctl{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-top:1px solid var(--line)}
 .ctl button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:50%;width:40px;height:40px;font-size:18px;transition:.2s}
 .ctl button:hover{background:var(--acc);color:var(--on)}
 .dots{display:flex;gap:8px}.dots button{width:11px;height:11px;border-radius:99px;padding:0;background:var(--line);border:0}.dots button.on{width:30px;background:var(--acc)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;transition:transform .25s,border-color .25s}
 .card:hover{transform:translateY(-4px);border-color:var(--acc)}.card h3{font-size:18px}
-footer{max-width:1240px;margin:0 auto;padding:60px 32px 40px;color:var(--mute);font-size:14px}
-@media (max-width:760px){section{padding-left:20px;padding-right:20px}nav{padding:10px 16px}.hero{grid-template-columns:1fr;text-align:center;min-height:0}.hero .lead{margin:auto}.btns{justify-content:center}.side{order:-1}.sk div{grid-template-columns:1fr}}
+footer{max-width:1040px;margin:0 auto;padding:60px 22px 40px;color:var(--mute);font-size:14px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;text-align:center;min-height:0}.hero .lead{margin:auto}.btns{justify-content:center}.side{order:-1}.sk div{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -106,7 +106,7 @@ footer{max-width:1240px;margin:0 auto;padding:60px 32px 40px;color:var(--mute);f
 <a class="btn p" href="#projects">See my projects</a>
 <a class="btn" href="https://github.com/MS26000" target="_blank" rel="noopener">GitHub</a>
 <a class="btn" href="https://huggingface.co/MS260000" target="_blank" rel="noopener">Hugging Face</a>
-<a class="btn" href="https://linkedin.com/in/muhammad-shahzad-0467b227" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://www.linkedin.com/in/muhammad-shahzad-0467b2276" target="_blank" rel="noopener">LinkedIn</a>
 </div>
 </div>
 <div class="side">
@@ -189,11 +189,11 @@ footer{max-width:1240px;margin:0 auto;padding:60px 32px 40px;color:var(--mute);f
 </div></section>
 
 <section id="contact"><h2 class="rv">Contact</h2>
-<p class="lead rv">Lahore, Pakistan. I’m open to AI/ML roles and research collaboration.</p>
+<p class="lead rv">Lahore, Pakistan. I’m open to AI/ML roles and research collaboration. Email: <a href="mailto:123muhammadshahzad26@gmail.com">123muhammadshahzad26@gmail.com</a></p>
 <div class="btns rv">
-<a class="btn p" href="mailto:123muhammadshahzad26@gmail.com">Email me</a>
+<a class="btn p" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=123muhammadshahzad26@gmail.com&amp;su=Hello%20Muhammad" target="_blank" rel="noopener">Email me</a>
 <button class="btn" id="cp">Copy email address</button>
-<a class="btn" href="https://linkedin.com/in/muhammad-shahzad-0467b227" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://www.linkedin.com/in/muhammad-shahzad-0467b2276" target="_blank" rel="noopener">LinkedIn</a>
 <a class="btn" href="https://github.com/MS26000" target="_blank" rel="noopener">GitHub</a>
 <a class="btn" href="https://huggingface.co/MS260000" target="_blank" rel="noopener">Hugging Face</a>
 </div></section>
@@ -233,7 +233,7 @@ function ic(n){return '<svg class="ic" aria-hidden="true"><use href="#i-'+n+'"/>
 $$(".job h3").forEach(function(h){h.insertAdjacentHTML("afterbegin",ic("job"))});
 $$("#education .card h3").forEach(function(h){h.insertAdjacentHTML("afterbegin",ic("grad"))});
 $$("#training .card h3").forEach(function(h){h.insertAdjacentHTML("afterbegin",ic("award"))});
-$$("a.btn").forEach(function(a){var h=a.getAttribute("href")||"",n=/github\.com/.test(h)?"git":/huggingface/.test(h)?"hf":/linkedin/.test(h)?"in":/^mailto/.test(h)?"mail":"";if(n)a.insertAdjacentHTML("afterbegin",ic(n))});
+$$("a.btn").forEach(function(a){var h=a.getAttribute("href")||"",n=/github\.com/.test(h)?"git":/huggingface/.test(h)?"hf":/linkedin/.test(h)?"in":/^mailto|mail\.google/.test(h)?"mail":"";if(n)a.insertAdjacentHTML("afterbegin",ic(n))});
 // copy email
 $("#cp").onclick=function(){var b=this,m="123muhammadshahzad26@gmail.com";try{navigator.clipboard.writeText(m).then(function(){b.textContent="Copied"},function(){b.textContent=m})}catch(e){b.textContent=m}setTimeout(function(){b.textContent="Copy email address"},2200)};
 })();
